@@ -1,27 +1,11 @@
-<div class="h-[512px] bg-red-500">
-	<h1>Hero</h1>
-</div>
+<script lang="ts">
+	const { data } = $props();
+</script>
 
-<div class="h-[512px] bg-yellow-500">
-	<h1>Service</h1>
-</div>
-
-<div class="h-[512px] bg-sky-500">
-	<h1>Portfolio</h1>
-</div>
-
-<div class="h-[512px] bg-green-500">
-	<h1>Technology</h1>
-</div>
-
-<div class="h-[512px] bg-purple-500">
-	<h1>Team Introduction</h1>
-</div>
-
-<div class="h-[512px] bg-gray-500">
-	<h1>Collaboration process</h1>
-</div>
-
-<div class="h-[512px] bg-blue-500">
-	<h1>Contact</h1>
+<div class="container mx-auto">
+	<div class="grid grid-cols-1 gap-4 lg:grid-cols-3">
+		{#each data.posts as post}
+			<a href={`/${post.slug}`}>{post.slug} - {post.title}</a>
+		{/each}
+	</div>
 </div>
