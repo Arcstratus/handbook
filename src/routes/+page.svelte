@@ -20,13 +20,6 @@
 							</li>
 						{/if}
 					{/each}
-
-					<li>
-						<a href="/company/vision-mission-and-core-values">Vision, Mission and Core Values</a>
-					</li>
-					<li>
-						<a href="/company/vision-mission-and-core-values">Vision, Mission and Core Values</a>
-					</li>
 				</ul>
 			</CardContent>
 		</Card>
@@ -40,72 +33,17 @@
 		</Card>
 
 		<Card>
-			<CardHeader title="Debug" />
+			<CardHeader title="engineering" />
+		</Card>
+
+		<Card>
+			<CardHeader title="Finance" />
 			<CardContent>
 				<ul>
 					{#each data.posts as post}
-						{#if !post.slug.startsWith('/company')}
+						{#if post.slug.startsWith('/finance')}
 							<li>
-								<a href={post.slug}>{post.slug} - {post.title}</a>
-							</li>
-						{/if}
-					{/each}
-				</ul>
-			</CardContent>
-		</Card>
-		<Card>
-			<CardHeader title="Debug" />
-		</Card>
-		<Card>
-			<CardHeader title="Debug" />
-			<CardContent>
-				<ul>
-					{#each data.posts as post}
-						{#if !post.slug.startsWith('/company')}
-							<li>
-								<a href={post.slug}>{post.slug} - {post.title}</a>
-							</li>
-						{/if}
-					{/each}
-					{#each data.posts as post}
-						{#if !post.slug.startsWith('/company')}
-							<li>
-								<a href={post.slug}>{post.slug} - {post.title}</a>
-							</li>
-						{/if}
-					{/each}
-					{#each data.posts as post}
-						{#if !post.slug.startsWith('/company')}
-							<li>
-								<a href={post.slug}>{post.slug} - {post.title}</a>
-							</li>
-						{/if}
-					{/each}
-				</ul>
-			</CardContent>
-		</Card>
-		<Card>
-			<CardHeader title="Debug" />
-			<CardContent>
-				<ul>
-					{#each data.posts as post}
-						{#if !post.slug.startsWith('/company')}
-							<li>
-								<a href={post.slug}>{post.slug} - {post.title}</a>
-							</li>
-						{/if}
-					{/each}
-				</ul>
-			</CardContent>
-		</Card>
-		<Card>
-			<CardHeader title="Debug" />
-			<CardContent>
-				<ul>
-					{#each data.posts as post}
-						{#if !post.slug.startsWith('/company')}
-							<li>
-								<a href={post.slug}>{post.slug} - {post.title}</a>
+								<a href={post.slug}>{post.title}</a>
 							</li>
 						{/if}
 					{/each}
