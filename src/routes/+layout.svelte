@@ -24,7 +24,7 @@
 </svelte:head>
 
 <ParaglideJS {i18n}>
-	<div class="gird h-screen grid-rows-[auto_1fr_auto]">
+	<div class="grid h-screen grid-rows-[auto_1fr_auto]">
 		<Header />
 
 		<main class="space-y-4 p-4">
